@@ -15,7 +15,7 @@ export function Header() {
   const totalItems = useTotalItems();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-zinc-200/50 bg-white/95 backdrop-blur-xl supports-[backdrop-filter]:bg-white/60 dark:border-zinc-800/50 dark:bg-zinc-950/95 dark:supports-[backdrop-filter]:bg-zinc-950/60">
+    <header className="sticky top-0 z-50 border-b border-zinc-200/50 bg-white/95 backdrop-blur-xl supports-backdrop-filter:bg-white/60 dark:border-zinc-800/50 dark:bg-zinc-950/95 dark:supports-backdrop-filter:bg-zinc-950/60">
       {/* Top bar - announcement */}
       <div className="border-b border-zinc-200/50 bg-zinc-50/50 dark:border-zinc-800/50 dark:bg-zinc-900/50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -35,7 +35,7 @@ export function Header() {
         <div className="flex h-20 items-center justify-between gap-8">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 shadow-lg shadow-amber-500/25 transition-shadow group-hover:shadow-xl group-hover:shadow-amber-500/30">
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-linear-to-br from-amber-500 to-amber-600 shadow-lg shadow-amber-500/25 transition-shadow group-hover:shadow-xl group-hover:shadow-amber-500/30">
               <svg
                 className="h-6 w-6 text-white"
                 fill="none"
@@ -117,7 +117,7 @@ export function Header() {
               <Button
                 onClick={openChat}
                 size="sm"
-                className="gap-2 bg-gradient-to-r from-amber-500 to-amber-600 text-white shadow-md shadow-amber-500/25 hover:from-amber-600 hover:to-amber-700 hover:shadow-lg hover:shadow-amber-500/30"
+                className="gap-2 bg-linear-to-r from-amber-500 to-amber-600 text-white shadow-md shadow-amber-500/25 hover:from-amber-600 hover:to-amber-700 hover:shadow-lg hover:shadow-amber-500/30"
               >
                 <Sparkles className="h-4 w-4" />
                 <span className="hidden md:inline text-sm font-medium">

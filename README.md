@@ -29,6 +29,25 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Sanity sample data
+
+Import sample data (categories, products, customers, orders):
+
+```bash
+npx sanity dataset import sample-data.ndjson <dataset-name>
+```
+
+- **Mevcut dokümanların üzerine yazmadan sadece yeni olanları eklemek:** `--missing` kullan:
+  ```bash
+  npx sanity dataset import sample-data.ndjson <dataset-name> --missing
+  ```
+- **Tüm dosyayı import edip mevcut dokümanları güncellemek:** `--replace` kullan:
+  ```bash
+  npx sanity dataset import sample-data.ndjson <dataset-name> --replace
+  ```
+
+`<dataset-name>` yerine `.env` içindeki `NEXT_PUBLIC_SANITY_DATASET` değerini yaz (örn. `production`).
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

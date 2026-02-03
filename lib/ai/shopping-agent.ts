@@ -202,7 +202,7 @@ export function createShoppingAgent({ userId }: ShoppingAgentOptions) {
   }
 
   return new ToolLoopAgent({
-    model: gateway("anthropic/claude-sonnet-4.5"),
+    model: gateway("google/gemini-2.5-flash-lite"),
     instructions,
     tools,
   });

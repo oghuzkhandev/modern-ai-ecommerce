@@ -33,10 +33,10 @@ export function NewsletterSection() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-amber-500 via-orange-500 to-red-600 py-16">
+    <section className="relative overflow-hidden bg-linear-to-br from-amber-500 via-orange-500 to-red-600 py-16">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute h-full w-full bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:3rem_3rem]" />
+        <div className="absolute h-full w-full bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-size-[3rem_3rem]" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -135,7 +135,7 @@ export function NewsletterSection() {
                     type="submit"
                     size="lg"
                     disabled={isLoading}
-                    className="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700"
+                    className="w-full bg-linear-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700"
                   >
                     {isLoading ? (
                       <>

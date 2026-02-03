@@ -275,7 +275,7 @@ export type CATEGORY_BY_SLUG_QUERYResult = {
   } | null;
 } | null;
 
-// Source: ./sanity/queries/customer.ts
+// Source: ./sanity/queries/customers.ts
 // Variable: CUSTOMER_BY_EMAIL_QUERY
 // Query: *[  _type == "customer"  && email == $email][0]{  _id,  email,  name,  clerkUserId,  stripeCustomerId,  createdAt}
 export type CUSTOMER_BY_EMAIL_QUERYResult = {
@@ -297,7 +297,7 @@ export type CUSTOMER_BY_STRIPE_ID_QUERYResult = {
   createdAt: string | null;
 } | null;
 
-// Source: ./sanity/queries/order.ts
+// Source: ./sanity/queries/orders.ts
 // Variable: ORDERS_BY_USER_QUERY
 // Query: *[  _type == "order"  && clerkUserId == $clerkUserId] | order(createdAt desc) {  _id,  orderNumber,  total,  status,  createdAt,  "itemCount": count(items),  "itemNames": items[].product->name,  "itemImages": items[].product->images[0].asset->url}
 export type ORDERS_BY_USER_QUERYResult = Array<{
